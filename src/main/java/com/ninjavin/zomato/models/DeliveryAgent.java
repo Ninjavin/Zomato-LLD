@@ -13,4 +13,8 @@ public class DeliveryAgent {
         this.agentId  = IdGenerator.generateId();
         this.status = DeliveryAgentStatus.AVAILABLE;
     }
+
+    public Long getAgentId() {
+        return agentId;
+    }
 }

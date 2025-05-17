@@ -1,5 +1,7 @@
 package com.ninjavin.zomato.models;
 
+import com.ninjavin.zomato.utils.IdGenerator;
+
 import java.util.List;
 
 public class Restaurant {
@@ -9,6 +11,7 @@ public class Restaurant {
     private Menu menu = null;
 
     public Restaurant(String name, String address) {
+        this.id = IdGenerator.generateId();
         this.name = name;
         this.address = address;
     }
